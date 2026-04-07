@@ -86,6 +86,7 @@ jobs:
           images: ${{ secrets.DOCKERHUB_USERNAME }}/github-actions-workshop
           tags: | 
             type=raw,value=latest
+            type=raw,value=main
             type=ref,event=branch
             type=ref,event=tag
             type=sha
